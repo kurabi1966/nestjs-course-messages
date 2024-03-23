@@ -1,0 +1,13 @@
+### Gell all messages
+GET http://localhost:3000/messages HTTP/1.1
+
+### Create new message
+POST http://localhost:3000/messages HTTP/1.1
+Content-Type: application/json
+
+{
+    "content": "Hello team"
+}
+
+### Get an existing message
+GET http://localhost:3000/messages/123 HTTP/1.1
